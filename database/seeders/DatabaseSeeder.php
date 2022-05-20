@@ -14,11 +14,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        $sql = database_path('nba2019.sql');
+          
+        $db = [
+            'username' => env('DB_USERNAME'), // TODO: change to config
+            'password' => env('DB_PASSWORD'),
+            'host' => env('DB_HOST'),
+            'database' => env('DB_DATABASE')
+        ];
+  
+        exec("mysql --user={$db['username']} --password={$db['password']} --host={$db['host']} --database {$db['database']} < $sql");
+  
+        \Log::info('SQL Import Done');
     }
 }
