@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PlayerInfoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,6 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/players', [PlayerInfoController::class, 'index'])->name('player.info');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
