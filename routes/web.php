@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\PlayerInfoController;
+use App\Http\Controllers\PlayerStatsController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,6 +20,7 @@ Route::get('/', function () {
 });
 
 Route::get('/players', [PlayerInfoController::class, 'index'])->name('player.info');
+Route::get('/playerStats', [PlayerStatsController::class, 'index'])->name('player.stats');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
