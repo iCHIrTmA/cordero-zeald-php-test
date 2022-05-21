@@ -20,6 +20,8 @@ Route::get('/', function () {
 });
 
 Route::get('/players', [PlayerInfoController::class, 'index'])->name('player.info');
+Route::get('/players/export', [PlayerInfoController::class, 'exportToCSV'])->name('player.info.export.csv');
+
 Route::get('/playerStats', [PlayerStatsController::class, 'index'])->name('player.stats');
 
 Route::get('/dashboard', function () {

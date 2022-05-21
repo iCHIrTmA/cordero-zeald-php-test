@@ -55,7 +55,7 @@
 
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    View general player information of your favorite NBA players here
+                                    View general player information of your favorite NBA players here. You could also export this info to csv file format
                                 </div>
                             </div>
                         </div>
