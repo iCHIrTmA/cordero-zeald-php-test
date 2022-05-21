@@ -11,11 +11,13 @@ This web application (1) shows general player information, (2) lists player stat
 
 3. In your CLI (ex. gitbash or powershell)
 ```
-./vendor/bin/sail composer install
+./vendor/bin/sail up -d // run containers
+./vendor/bin/sail ps -a // check if all containers are running
+./vendor/bin/sail composer install // composer dependencies (laravel excel)
 ./vendor/bin/sail php artisan key:generate
-./vendor/bin/sail php artisan migrate:fresh --seed
+./vendor/bin/sail php artisan migrate:fresh --seed // --seed runs DatabaseSeeder to import nba sql file
 ./vendor/bin/sail npm install
-./vendor/bin/sail npm run dev
+./vendor/bin/sail npm run dev // for styling
 ```
 
 ### Package used for implementing Export to CSV Featur
