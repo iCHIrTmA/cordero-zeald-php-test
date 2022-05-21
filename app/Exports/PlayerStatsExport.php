@@ -27,6 +27,7 @@ class PlayerStatsExport implements FromCollection
                         ->join('roster', 'player_totals.player_id', 'roster.id')
                         ->join('team', 'roster.team_code', 'team.code')
                         ->whereRaw('ROUND((player_totals.3pt / player_totals.3pt_attempted * 100), 2) > 35')
+                        ->where('player_totals.age', '>', 30)
                         ->orderBy('three_pts_percent', 'DESC')
                         ->get();
 
