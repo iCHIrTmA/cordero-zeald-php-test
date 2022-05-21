@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Exports\PlayerStatsExport;
 use Illuminate\Support\Facades\DB;
+use Maatwebsite\Excel\Facades\Excel;
 
 class PlayerStatsController extends Controller
 {
@@ -28,5 +30,11 @@ class PlayerStatsController extends Controller
         return view('player.stats', [
             'playerStats' => $playerStats
         ]);
+    }
+
+    // TODO: same as PlayerInfoController::exportToCSV() - consider interface to output to different formats;
+    public function exportToCSV()
+    {
+        return Excel::download(new PlayerStatsExport, 'playerStats3pts.csv');
     }
 }

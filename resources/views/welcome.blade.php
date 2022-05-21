@@ -55,7 +55,7 @@
 
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    View general player information of your favorite NBA players here. You could also export this info to csv file format
+                                    View general player information of your favorite NBA players here. You could also export this info to csv file format.
                                 </div>
                             </div>
                         </div>
@@ -81,7 +81,7 @@
 
                             <div class="ml-12">
                                 <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    View player statistics about players' accuracy on scoring 3 pts, their teams and position.
+                                    View player statistics about players' accuracy on scoring 3 pts, their teams and position. Need this somewhere? Export this info to csv file format!
                                 </div>
                             </div>
                         </div>

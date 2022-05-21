@@ -22,7 +22,10 @@ Route::get('/', function () {
 Route::get('/players', [PlayerInfoController::class, 'index'])->name('player.info');
 Route::get('/players/export', [PlayerInfoController::class, 'exportToCSV'])->name('player.info.export.csv');
 
+// Report 1 of SQL Query Design Test
 Route::get('/playerStats', [PlayerStatsController::class, 'index'])->name('player.stats');
+Route::get('/playerStats/export', [PlayerStatsController::class, 'exportToCSV'])->name('player.stats.export.csv');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
