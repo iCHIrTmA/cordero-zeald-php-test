@@ -1,4 +1,5 @@
 ## Prototype laravel app for Test II: Programming Implementation
+![](https://github.com/iCHIrTmA/cordero-zeald-php-test/blob/main/cordero-zeald-php-test.gif)
 
 This web application (1) shows general player information, (2) lists player statistics, and (3) export information to csv file format
 
