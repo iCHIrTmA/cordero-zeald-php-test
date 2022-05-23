@@ -17,10 +17,10 @@ class DatabaseSeeder extends Seeder
         $sql = database_path('nba2019.sql');
           
         $db = [
-            'username' => env('DB_USERNAME'), // TODO: change to config
-            'password' => env('DB_PASSWORD'),
-            'host' => env('DB_HOST'),
-            'database' => env('DB_DATABASE')
+            'username' => config('database.connections.mysql.username'), // TODO: change to config
+            'password' => config('database.connections.mysql.password'),
+            'host' => config('database.connections.mysql.host'),
+            'database' => config('database.connections.mysql.database'),
         ];
   
         exec("mysql --user={$db['username']} --password={$db['password']} --host={$db['host']} --database {$db['database']} < $sql");
