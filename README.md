@@ -20,7 +20,7 @@ This web application (1) shows general player information, (2) lists player stat
 ./vendor/bin/sail npm run dev # for styling
 ```
 
-### Package used for implementing Export to CSV Featur
+### Package used for implementing Export to CSV Feature
 
 - **[Laravel Excel](https://docs.laravel-excel.com/3.1/getting-started/installation.html)**
 
