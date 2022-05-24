@@ -13,6 +13,8 @@
         <!-- Styles -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 
+        <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.6/dist/flowbite.min.css" />
+
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
     </head>
@@ -27,5 +29,7 @@
                 {{ $slot }}
             </main>
         </div>
+
+    <script src="https://unpkg.com/flowbite@1.4.6/dist/flowbite.js"></script>
     </body>
 </html>

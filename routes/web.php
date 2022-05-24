@@ -20,11 +20,14 @@ Route::get('/', function () {
 });
 
 Route::get('/players', [PlayerInfoController::class, 'index'])->name('player.info');
-Route::get('/players/export', [PlayerInfoController::class, 'exportToCSV'])->name('player.info.export.csv');
+Route::get('/players/exportToCSV', [PlayerInfoController::class, 'exportToCSV'])->name('player.info.export.csv');
+Route::get('/players/exportToJSON', [PlayerInfoController::class, 'exportToJSON'])->name('player.info.export.json');
 
 // Report 1 of SQL Query Design Test
 Route::get('/playerStats', [PlayerStatsController::class, 'index'])->name('player.stats');
-Route::get('/playerStats/export', [PlayerStatsController::class, 'exportToCSV'])->name('player.stats.export.csv');
+Route::get('/playerStats/exportToCSV', [PlayerStatsController::class, 'exportToCSV'])->name('player.stats.export.csv');
+Route::get('/playerStats/exportToJSON', [PlayerStatsController::class, 'exportToJSON'])->name('player.stats.export.json');
+
 
 
 Route::get('/dashboard', function () {
