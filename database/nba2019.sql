@@ -27,6 +27,8 @@ SET time_zone = "+00:00";
 -- Table structure for table `player_totals`
 --
 
+use heroku_c09b7886f2a8f82;
+
 DROP TABLE IF EXISTS `player_totals`;
 CREATE TABLE `player_totals` (
   `player_id` varchar(32) NOT NULL,
